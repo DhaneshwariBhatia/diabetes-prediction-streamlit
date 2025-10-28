@@ -13,7 +13,7 @@ st.set_page_config(page_title="Diabetes Prediction App", page_icon="🩺", layou
 # ----------------------------
 @st.cache_resource
 def load_model():
-    return joblib.load("best_diabetes_model (4).pkl")  # Ensure file is in the same folder
+    return joblib.load("best_diabetes_model.pkl")  # Ensure file is in the same folder
 
 model = load_model()
 
@@ -160,3 +160,4 @@ if st.button("🔍 Predict Diabetes Status"):
 # ----------------------------
 st.markdown("---")
 st.caption("Developed by **Dhaneshwari Bhatia** | Powered by Streamlit 💡")
+
